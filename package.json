@@ -1,0 +1,19 @@
+{
+  "name": "jeromedubois_3_21022021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerome-dubois/JeromeDubois_3_21022021.git"
+  },
+  "author": "Jérôme DUBOIS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerome-dubois/JeromeDubois_3_21022021/issues"
+  },
+  "homepage": "https://github.com/jerome-dubois/JeromeDubois_3_21022021#readme"
+}
