@@ -1,0 +1,12 @@
+
+.search {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 4rem 3rem 4rem;
+    background-color: #F2F2F2;
+    &__btn{
+        @include btn
+    }
+}
