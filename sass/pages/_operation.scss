@@ -1,3 +1,41 @@
 .operation {
     padding: 1.5rem;
+    &__list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        list-style-position: inside;
+        list-style: none;
+    } 
+}
+
+.operation-btn {
+    @include operation-btn;
+    position: relative;
+    min-width: 250px;
+    &:hover {
+        background: rgba(147, 86, 220, 0.2);              
+    }
+    &__heading {
+        padding-left: 1rem;
+        font-weight: bold;
+    }
+    &__number {
+        position: absolute;
+        left:-10px;
+        border-radius: 30px;
+        width: 20px;
+        height: 20px;
+        background-color: $color-primary;
+        color: white;
+    }
+    &__icon {
+        color: rgba(0, 0, 0, .5);;
+        &:hover {
+        color: $color-primary;
+        }
+    }
+    
 }
