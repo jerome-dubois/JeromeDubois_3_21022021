@@ -5,17 +5,13 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  /*color: $colour-primary;*/
   font-size: 1rem;
-  /*font-weight: 100;
-  line-height: 1.7;*/
 }
 
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 900;
   font-size: 2rem;
-  /*font-style: italic;*/
 }
 
 .container {
@@ -30,7 +26,7 @@ header {
 }
 
 footer {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 3rem 1.5rem;
   color: white;
   background-color: #353535;
 }
@@ -38,6 +34,20 @@ footer ul {
   margin: 0px;
   padding: 0;
   list-style: none;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5 rem;
+  font-weight: normal;
+}
+footer li {
+  margin: 10px 0;
+}
+footer li span {
+  padding-left: 10px;
+}
+footer li span i {
+  width: 20px;
 }
 
 .search {
@@ -152,14 +162,19 @@ footer ul {
 .restaurant-card h2, .restaurant-card p {
   margin: 0.1rem;
 }
-@media (min-width: 600px) {
-  .restaurant-card {
-    width: 25%;
-  }
-}
 @media (max-width: 599px) {
   .restaurant-card {
     width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .restaurant-card {
+    width: 48%;
+  }
+}
+@media (min-width: 1025px) {
+  .restaurant-card {
+    width: 24%;
   }
 }
 

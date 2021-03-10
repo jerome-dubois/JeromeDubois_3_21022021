@@ -1,10 +1,25 @@
 footer {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
 	color: white;
     background-color: #353535;
     & ul {
         margin: 0px;
         padding: 0;
         list-style: none;     
+    }
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.5 rem;
+        font-weight: normal;
+    }
+
+    li {
+        margin: 10px 0;
+        span {
+            padding-left: 10px;
+            i {
+                width:20px;
+            }
+        }
     }
 }
