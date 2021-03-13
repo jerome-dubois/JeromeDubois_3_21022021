@@ -16,7 +16,8 @@
     position: relative;
     min-width: 250px;
     &:hover {
-        background: rgba(147, 86, 220, 0.2);              
+        background: rgba(147, 86, 220, 0.2);
+        .operation-btn__icon { color: $color-primary; }            
     }
     &__heading {
         padding-left: 1rem;
@@ -32,10 +33,7 @@
         color: white;
     }
     &__icon {
-        color: rgba(0, 0, 0, .5);;
-        &:hover {
-        color: $color-primary;
-        }
+        color: rgba(0, 0, 0, .5);        
     }
     
 }

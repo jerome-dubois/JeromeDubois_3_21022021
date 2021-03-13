@@ -12,11 +12,8 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 900;
   font-size: 2rem;
-}
-
-.container {
-  max-width: 1400px;
-  margin: auto;
+  margin: 10px auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -37,7 +34,7 @@ footer ul {
 }
 footer h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.5 rem;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 footer li {
@@ -48,6 +45,10 @@ footer li span {
 }
 footer li span i {
   width: 20px;
+}
+footer li a:link {
+  text-decoration: none;
+  color: white;
 }
 
 .search {
@@ -103,6 +104,9 @@ footer li span i {
 .operation-btn:hover {
   background: rgba(147, 86, 220, 0.2);
 }
+.operation-btn:hover .operation-btn__icon {
+  color: #9356DC;
+}
 .operation-btn__heading {
   padding-left: 1rem;
   font-weight: bold;
@@ -118,9 +122,6 @@ footer li span i {
 }
 .operation-btn__icon {
   color: rgba(0, 0, 0, 0.5);
-}
-.operation-btn__icon:hover {
-  color: #9356DC;
 }
 
 .restaurants {
@@ -143,7 +144,7 @@ footer li span i {
   text-decoration: none;
   box-shadow: -2px 2px 8px #c5c5c5;
 }
-.restaurant-card__image {
+.restaurant-card__img {
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -154,10 +155,41 @@ footer li span i {
   position: relative;
   margin: 10px;
 }
+.restaurant-card__heading {
+  flex: 1;
+}
 .restaurant-card__heart-icon {
-  padding-right: 10px;
+  margin-right: 10px;
+  width: 2em;
+  height: 2em;
+  position: relative;
+  background-color: black;
+}
+.restaurant-card__heart-icon::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(#9356DC, #FF79DA);
   position: absolute;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.restaurant-card__heart-icon:hover::before {
+  opacity: 1;
+}
+.restaurant-card__heart-icon:hover .far {
+  opacity: 0;
+}
+.restaurant-card__heart-layer {
+  background-color: white !important;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .restaurant-card h2, .restaurant-card p {
   margin: 0.1rem;
@@ -193,6 +225,25 @@ footer li span i {
   border: none;
   background-color: #D9D9D9;
   width: 10rem;
+}
+
+.restaurant {
+  position: relative;
+}
+.restaurant__img {
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__heading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F2F2F2;
+  width: 100%;
+  margin: 0;
+  border-radius: 30px 30px 0 0;
+  padding: 10px 10px 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,7 @@ footer {
     }
     h2 {
         font-family: 'Shrikhand', cursive;
-        font-size: 1.5 rem;
+        font-size: 1.2rem;
         font-weight: normal;
     }
 
@@ -20,6 +20,10 @@ footer {
             i {
                 width:20px;
             }
+        }
+        a:link {
+            text-decoration:none;
+            color: white;
         }
     }
 }

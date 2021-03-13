@@ -4,11 +4,13 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./layouts/container";
+// @import "./layouts/container";
 @import "./layouts/header";
 @import "./layouts/footer";
 
-@import "./pages/search";
-@import "./pages/operation";
-@import "./pages/restaurants";
-@import "./pages/city-location";
+@import "./pages/accueil/search";
+@import "./pages/accueil/operation";
+@import "./pages/accueil/restaurants";
+@import "./pages/accueil/city-location";
+
+@import "./pages/menu/restaurant";
