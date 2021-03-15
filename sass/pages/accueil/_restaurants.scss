@@ -17,6 +17,8 @@
     margin: 15px 0px;
     text-decoration: none;
     box-shadow: -2px 2px 8px #c5c5c5;
+    min-width: 300px;
+
     &__img {
         height: 200px;
         object-fit: cover;
@@ -77,12 +79,8 @@
         width: 100%;        
     }
 
-    @media (min-width: 600px) and (max-width: 1024px) {
+    @media (min-width: 600px) {
         width: 48%;
-    }
-
-    @media (min-width: 1025px) {
-        width: 24%;      
-    }
+    }  
 
 }
