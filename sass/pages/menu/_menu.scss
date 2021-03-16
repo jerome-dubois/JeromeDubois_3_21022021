@@ -1,0 +1,53 @@
+.menu {
+    background-color: #F2F2F2;
+    padding: 1.5rem;
+    h2 {
+        font-weight: normal;
+    }
+
+    &__heading {
+        width: 3rem;
+        padding-bottom: 0.5rem;;
+        border-bottom: 4px solid $color-tertiary;
+    }
+     
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:0;
+    }
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background: white;
+    box-shadow: -2px 2px 10px #c5c5c5;
+    width: 100%;
+    margin-bottom: 1rem;
+    &__description {
+        flex: 1;
+        h2 {
+            margin:0.5rem;
+            font-weight: bold;
+        }
+        
+        p {
+            margin:0.5rem;
+            font-size: 1rem;
+        }
+    }
+    &__price {
+        font-size: 1rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
