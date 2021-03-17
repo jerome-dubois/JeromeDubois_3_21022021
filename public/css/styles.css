@@ -51,7 +51,7 @@ footer li a:link {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -306,6 +306,11 @@ footer li a:link {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+@media (min-width: 1024px) {
+  .menu-item {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
