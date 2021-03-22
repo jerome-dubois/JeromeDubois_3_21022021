@@ -15,6 +15,10 @@ h1 {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 header {
   margin: auto;
   display: flex;
@@ -279,38 +283,93 @@ footer li a:link {
 
 .menu-item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   border-radius: 15px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
   font-size: 0.8rem;
   background: white;
   box-shadow: -2px 2px 10px #c5c5c5;
   width: 100%;
   margin-bottom: 1rem;
+  overflow: hidden;
+  cursor: pointer;
 }
 .menu-item__description {
   flex: 1;
+  overflow: hidden;
 }
 .menu-item__description h2 {
   margin: 0.5rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 .menu-item__description p {
   margin: 0.5rem;
   font-size: 1rem;
+  white-space: nowrap;
+  margin: 0 0.5rem 0.5rem 0.5rem;
 }
 .menu-item__price {
   font-size: 1rem;
   font-weight: bold;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .menu-item {
     width: 30%;
   }
+}
+.menu-item__selection {
+  background-color: #99E2D0;
+  margin: -1rem -5.5rem -1rem 1rem;
+  padding: 1rem;
+  width: 2.5rem;
+  height: 100%;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-item__container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.menu-item__icon {
+  color: #99E2D0;
+  transform: rotate(180deg);
+}
+.menu-item:hover > .menu-item__selection {
+  margin-right: -1rem;
+}
+.menu-item:hover .menu-item__icon {
+  transform: rotate(0);
+  transition: transform 0.5s ease;
+}
+.menu-item__check {
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menu-item:hover .menu-item__check {
+  transform: rotate(0);
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

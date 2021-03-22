@@ -22,36 +22,100 @@
 
 .menu-item {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     border-radius: 15px;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
     font-size: 0.8rem;
     background: white;
     box-shadow: -2px 2px 10px #c5c5c5;
     width: 100%;
     margin-bottom: 1rem;
+    overflow: hidden;
+    cursor: pointer;
     &__description {
         flex: 1;
+        overflow: hidden;
         h2 {
             margin:0.5rem;
             font-weight: bold;
+            white-space: nowrap;
         }
         
         p {
             margin:0.5rem;
             font-size: 1rem;
+            white-space: nowrap;
+            margin: 0 0.5rem 0.5rem 0.5rem
         }
     }
     &__price {
         font-size: 1rem;
         font-weight: bold;
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+        overflow: hidden;
     }
 
     @media (min-width: 1024px) {
         width:30%;    
     }
+
+    &__selection {
+        background-color: $color-tertiary;
+        margin: -1rem -5.5rem -1rem 1rem;
+        padding: 1rem;
+        width: 2.5rem;
+        height: 100%;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    &__container-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;        
+    }
+
+    &__icon {
+        color: $color-tertiary;
+        transform: rotate(180deg);      
+    }
+
+    &:hover > &__selection {
+        margin-right: -1rem;
+        // cursor: pointer;
+    }
+
+    &:hover &__icon {
+        transform: rotate(0);
+        transition: transform 0.5s ease;
+    }    
+
+    &__check {
+        height: 2rem;
+        width: 2rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+    }
+
+    &:hover &__check {
+        transform: rotate(0);
+    }    
+
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
 }
