@@ -302,7 +302,8 @@ footer li a:link {
   margin-bottom: 1rem;
   overflow: hidden;
   cursor: pointer;
-  animation: menu-itemAnim 1s;
+  animation: menu-itemAnim 1s both;
+  transform: scale(0);
 }
 .menu-item__description {
   flex: 1;
