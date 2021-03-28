@@ -15,37 +15,37 @@
     } 
 }
 
-.operation-btn {
-    @include operation-btn;
-    position: relative;
-    min-width: 250px;
-    &:hover {
-        background: rgba(147, 86, 220, 0.2);
-        .operation-btn__icon { color: $color-primary; }            
-    }
+// .operation-btn {
+//     @include operation-btn;
+//     position: relative;
+//     min-width: 250px;
+//     &:hover {
+//         background: rgba(147, 86, 220, 0.2);
+//         .operation-btn__icon { color: $color-primary; }            
+//     }
 
-    &:before {
-        counter-increment: compteListe 1;
-        content: counter(compteListe) " ";
-        position: absolute;
-        left:-0.5rem;
-        border-radius: 30px;
-        width: 20px;
-        height: 20px;
-        background-color: $color-primary;
-        color: white;
-    }
+//     &:before {
+//         counter-increment: compteListe 1;
+//         content: counter(compteListe) " ";
+//         position: absolute;
+//         left:-0.5rem;
+//         border-radius: 30px;
+//         width: 20px;
+//         height: 20px;
+//         background-color: $color-primary;
+//         color: white;
+//     }
 
-    &__heading {
-        padding-left: 1rem;
-        font-weight: bold;
-    }
+//     &__heading {
+//         padding-left: 1rem;
+//         font-weight: bold;
+//     }
     
-    &__icon {
-        color: rgba(0, 0, 0, .5);        
-    }  
+//     &__icon {
+//         color: rgba(0, 0, 0, .5);        
+//     }  
 
-    @media (min-width: 1024px) {
-        width:26%;    
-    }
-}
+//     @media (min-width: 1024px) {
+//         width:26%;    
+//     }
+// }

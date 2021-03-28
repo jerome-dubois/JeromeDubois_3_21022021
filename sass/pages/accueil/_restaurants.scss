@@ -52,13 +52,24 @@
             top: 0;
             left: 0;
         }
-        &:hover::before {
+        &:active::before {
             opacity: 1;           
         }
-        &:hover {
+        &:active {
             .far {
                 opacity: 0;
             }
+        }
+
+        @media (min-width: 1024px) {
+            &:hover::before {
+                opacity: 1;           
+            }
+            &:hover {
+                .far {
+                    opacity: 0;
+                }
+            }       
         }
     }
     &__heart-layer {
