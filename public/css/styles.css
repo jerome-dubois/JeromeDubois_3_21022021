@@ -277,6 +277,7 @@ footer li a:link {
   text-decoration: none;
   box-shadow: -2px 2px 8px #c5c5c5;
   min-width: 250px;
+  position: relative;
 }
 .restaurant-card__img {
   height: 200px;
@@ -291,6 +292,15 @@ footer li a:link {
 }
 .restaurant-card__heading {
   flex: 1;
+}
+.restaurant-card__label {
+  background-color: #99E2D0;
+  color: #227762;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
 }
 .restaurant-card__heart-icon {
   margin-right: 10px;

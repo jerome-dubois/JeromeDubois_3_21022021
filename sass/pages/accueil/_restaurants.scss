@@ -18,6 +18,7 @@
     text-decoration: none;
     box-shadow: -2px 2px 8px #c5c5c5;
     min-width: 250px;
+    position: relative;
 
     &__img {
         height: 200px;
@@ -33,6 +34,16 @@
     }
     &__heading {
         flex:1;
+    }
+
+    &__label {
+        background-color: $color-tertiary;
+        color: #227762;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 0.1rem;
+        padding: 0.5rem;
     }
 
     &__heart-icon {
